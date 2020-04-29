@@ -12,3 +12,5 @@ return (in this case, the final reward).
 
 Depends on networkx and matplotlib.
 
+Reference: Sutton and Barto 2018 (2nd Edition)
+
