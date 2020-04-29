@@ -10,6 +10,13 @@ is the length of the new path, otherwise it is zero. Given an initial state of
 just the source vertex, the goal is to find the actions that can maximize the
 return (in this case, the final reward).
 
+See results/ folder for snapshots of each iteration. Not all figures shows an
+improvement in the path. No improvement indicates the algorithm has updated the
+value function but has not found a better path. Finding a longest path is known
+to be NP-hard. The problem has no optimal substructure, hence unlike a shortest
+path, the longest path cannot be built iteratively. See how figure 03.png
+abruptly switches to a new path from the one in figure 02.png.
+
 Depends on networkx and matplotlib.
 
 Reference: Sutton and Barto 2018 (2nd Edition)
