@@ -168,6 +168,7 @@ for t in range(T):
     nx.draw_networkx_edges(G, pos=pos, edgelist=g_best.edges,
         edge_color='r', width=2)
     plt.pause(0.5)
+    plt.savefig("results/{:02d}.png".format(t))
 
     if flag and err < 1:
         break
